@@ -10,8 +10,9 @@ const db = require('./app/config/db.config.js');
 db.sequelize.sync({ force: false }).then(() => {
   console.log('Drop and Resync with { force: true }');
 });
- 
-require('./app/routes/customer.route.js')(app);
+
+// require('./app/controllers/cliente.js')(app);
+require('./app/controllers/router')(app);
  
 // Create a Server
 var server = app.listen(8081, function () { 

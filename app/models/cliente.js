@@ -1,5 +1,6 @@
+
 module.exports = (sequelize, Sequelize) => {
-    const Customer = sequelize.define('cliente', {
+    const cliente = sequelize.define('cliente', {
       cedula: {
         type: Sequelize.STRING 
       },
@@ -28,5 +29,5 @@ module.exports = (sequelize, Sequelize) => {
 
     });
     
-    return Customer;
-  }
+    return cliente;
+}
