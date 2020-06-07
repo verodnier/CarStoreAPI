@@ -13,7 +13,8 @@ const sequelize = new Sequelize(env.database, env.username, env.password, {
   define: {
     // The `timestamps` field specify whether or not the `createdAt` and `updatedAt` fields will be created.
     // This was true by default, but now is false by default
-    timestamps: false
+    timestamps: false,
+    freezeTableName: true
   }
 });
 

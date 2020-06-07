@@ -2,7 +2,7 @@ const env = {
     database: 'Carstore',
     username: 'postgres',
     password: 'GengisKan85',
-    host: 'localhost:5432',
+    host: 'localhost',
     dialect: 'postgres',
     pool: {
       max: 5,
