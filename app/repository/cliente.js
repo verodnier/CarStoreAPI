@@ -20,18 +20,6 @@ exports.findById = (req, res) => {
   });
 };
 
-// Obtener clientes por nombre y cédula
-exports.findByNameCedula = (req, res) => {
-  cliente.findAll({
-   where: {
-     nombre: req.params.nombre,
-     cedula: req.params.cedula
-   }
- }).then(cliente => {
-   res.send(cliente);
- });
-};
-
 // Adicionar cliente
 exports.add = (req, res) => { 
   cliente.create({  
